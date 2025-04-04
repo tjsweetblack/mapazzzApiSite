@@ -17,7 +17,7 @@ async function fetchZonas() {
                 <h3>${zona.location}</h3>
                 <p>Risco: <span class="risk-${riskText.toLowerCase()}">${riskText}</span></p>
                 <p>Longitude: ${zona.longitude}</p>
-                <p>Latitude: Não disponível</p> <!-- Como não há latitude nos dados -->
+                <p>Latitude: ${zona.latitude}</p> <!-- Como não há latitude nos dados -->
             `;
             zonasList.appendChild(zonaItem);
         });
