@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - MapaZZZ</title>
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo"><img src="logo.png" alt="Logo MapaZZZ"></a>
+        <ul class="nav_list">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="zonas.html">Zonas de Risco</a></li>
+            <li><a href="reportagens.html">Reportagens</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+        </ul>
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <section class="sobre">
+        <h1>Sobre o MapaZZZ</h1>
+        <p>O MapaZZZ é uma ferramenta desenvolvida para combater a malária através da tecnologia e da participação comunitária.</p>
+        
+        <div class="docs">
+            <h2>Documentação da API</h2>
+            <p>A API do MapaZZZ permite acesso a dados em tempo real sobre zonas de risco e reportagens. Veja como usar:</p>
+            <div class="doc-item">
+                <h3>Endpoint: /api/reportagens/zonas</h3>
+                <p><strong>Descrição:</strong> Retorna uma lista de zonas de risco identificadas.</p>
+                <p><strong>Método:</strong> GET</p>
+                <p><strong>Exemplo:</strong> <code>fetch('https://mapazzz-api.vercel.app/api/reportagens/zonas')</code></p>
+                <p><strong>Resposta:</strong> JSON com local, risco, latitude e longitude.</p>
+            </div>
+            <div class="doc-item">
+                <h3>Endpoint: /api/reportagens</h3>
+                <p><strong>Descrição:</strong> Retorna reportagens enviadas pela comunidade (em desenvolvimento).</p>
+                <p><strong>Método:</strong> GET</p>
+                <p><strong>Exemplo:</strong> <code>fetch('https://mapazzz-api.vercel.app/api/reportagens')</code></p>
+            </div>
+            <p>Para mais detalhes, entre em contato com a equipe do MapaZZZ.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 MapaZZZ - Hackathon. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="sobre.js"></script>
+</body>
+</html>
